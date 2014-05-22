@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		79C30FE9191103D70088EF82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C30FE8191103D70088EF82 /* Foundation.framework */; };
-		79C30FEC191103D70088EF82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C30FEB191103D70088EF82 /* main.m */; };
+		79C30FEC191103D70088EF82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C30FEB191103D70088EF82 /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		79C30FF0191103D70088EF82 /* Array.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79C30FEF191103D70088EF82 /* Array.1 */; };
+		79C30FF8191105390088EF82 /* Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C30FF7191105390088EF82 /* Methods.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		79C30FEB191103D70088EF82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79C30FEE191103D70088EF82 /* Array-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Array-Prefix.pch"; sourceTree = "<group>"; };
 		79C30FEF191103D70088EF82 /* Array.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Array.1; sourceTree = "<group>"; };
+		79C30FF6191105390088EF82 /* Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Methods.h; sourceTree = "<group>"; };
+		79C30FF7191105390088EF82 /* Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Methods.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				79C30FEA191103D70088EF82 /* Array */,
+				79C30FED191103D70088EF82 /* Supporting Files */,
 				79C30FE7191103D70088EF82 /* Frameworks */,
 				79C30FE6191103D70088EF82 /* Products */,
 			);
@@ -75,7 +79,7 @@
 			children = (
 				79C30FEB191103D70088EF82 /* main.m */,
 				79C30FEF191103D70088EF82 /* Array.1 */,
-				79C30FED191103D70088EF82 /* Supporting Files */,
+				79C30FF91911053D0088EF82 /* New Group */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -86,6 +90,16 @@
 				79C30FEE191103D70088EF82 /* Array-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Array;
+			sourceTree = "<group>";
+		};
+		79C30FF91911053D0088EF82 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				79C30FF6191105390088EF82 /* Methods.h */,
+				79C30FF7191105390088EF82 /* Methods.m */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C30FF8191105390088EF82 /* Methods.m in Sources */,
 				79C30FEC191103D70088EF82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +268,7 @@
 				79C30FF5191103D70088EF82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
